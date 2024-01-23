@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import MainHeaderBackground from "./MainHeaderBackground/MainHeaderBackground";
+import NavLink from "./NavLink/NavLink";
 
 const MainHeader = () => {
    return (
@@ -25,12 +26,14 @@ const MainHeader = () => {
             <nav className={styles.nav}>
                <ul>
                   <li>
-                     <Link href='/meals'>Browse Meals</Link>
+                     <NavLink href='/meals'>
+                        Browse Meals
+                     </NavLink>
                   </li>
                   <li>
-                     <Link href='/community'>
+                     <NavLink href='/community'>
                         Community
-                     </Link>
+                     </NavLink>
                   </li>
                </ul>
             </nav>
